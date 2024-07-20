@@ -13,6 +13,7 @@ int main () {
 
   int myArr[] = {1,2,3,4,5};
   int myBrr[12] = {1,2,3,4,5,6};
+  cout << sizeof(myBrr) << " size of mybrr array";
   for(int i = 0; i < 12 ; i= i+1) {
     cout << myBrr[i] << endl;
   } 

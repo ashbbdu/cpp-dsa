@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+ #include <wchar.h>
 
 int main () {
     // vector is a dynamic array

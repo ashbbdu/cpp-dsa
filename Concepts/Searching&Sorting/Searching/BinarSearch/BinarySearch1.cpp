@@ -25,4 +25,20 @@ int main () {
     int size = 9;
     int findElement = binarySearch(arr , target , size);
     cout << "Element is present at index " << findElement << endl;
+
+    // Binary Search STL
+    vector <int> brr = {1,2,3,4,5,6,7,8,9};
+    if(binary_search(brr.begin() , brr.end() , 4)) {
+        cout << "Element Found !!" << endl;
+    } else {
+        cout << "Element Not Found !!" << endl;
+    }
+
+    int crr [] = {1,2,3,4,5,6,7,8,9};
+    int crrSize = 9;
+    if(binary_search(arr , arr+size , 22)) {
+        cout << "Element Found !!" << endl;
+    } else {
+        cout << "Element Not Found !!" << endl;
+    }
 }

@@ -74,6 +74,7 @@ int main () {
     // -------------------- Insert ------------------
     // for inserting the element
     vector <int> crr = {2,3,4,6};
+    // Before which position I want to insert
     crr.insert(crr.begin() , 4)  ;//will insert in the start ie before crr.begin()
     crr.insert(crr.begin() + 1 , 0); //will insert before crr.begin() + 1
     crr.insert(crr.end() , 10);

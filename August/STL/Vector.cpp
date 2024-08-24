@@ -27,7 +27,62 @@ int main () {
     for(vector<int>::iterator i = beginItr ; i < endItr ; i++) {
         cout << *i << " " ;
     }
-}
+    cout << endl;
+    //  another way using auto
+    for(auto i = beginItr ; i < endItr ; i++) {
+        cout << *i << " ";
+    }
+    cout << endl;
+    for(auto i : arr) {
+    cout << i << " ";
+    }
+    cout << endl;
+    // Reverse Iterator
+    auto revStart = arr.rbegin();
+    auto revEnd = arr.rend();
+    cout << *revEnd << " " <<*revStart; 
+    cout << endl;
+    for(auto i = revStart ; i < revEnd ; i++) {
+        cout << *i << " ";
+    }
+    cout << endl;
+    // -------------------- Front and Back ------------------
+    // Returns first and last element in the vector
+    cout << arr.front() << " ";
+    cout << arr.back() << endl;
+
+        // -------------------- Erase ------------------
+
+    vector <int> brr = {1,2,3,4,5};
+    //brr.erase(brr.begin() + 1);  // removes a particular element
+    brr.erase(brr.begin() + 2 , brr.end() ); //expected o/p 1,2
+    
+    for(auto i : brr) {
+        cout << i << " ";
+    }
+
+    cout << endl;
+    // -------------------- Clear ------------------
+    
+   
+    brr.clear();
+    for(auto i : brr) {
+        cout << i << " i";
+    }
+
+     cout << endl;
+    // -------------------- Insert ------------------
+    // for inserting the element
+    vector <int> crr = {2,3,4,6};
+    crr.insert(crr.begin() , 4)  ;//will insert in the start ie before crr.begin()
+    crr.insert(crr.begin() + 1 , 0); //will insert before crr.begin() + 1
+    crr.insert(crr.end() , 10);
+
+    for(auto i : crr) {
+        cout << i << " ";
+    }
+
+    }
 
 
 // Notes : emplace_back and push_back are same , under the hood they are doing same

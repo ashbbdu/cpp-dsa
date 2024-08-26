@@ -22,7 +22,7 @@ int main () {
     st1.push(5);
     st1.push(6);
 
-    while(st1.empty() == false) {
+    while(st1.empty() == false) {  
         cout << st1.top() << " ";
         st1.pop();
     }
